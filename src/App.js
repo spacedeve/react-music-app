@@ -16,6 +16,11 @@ class App extends Component {
       songs: data(),
       currentSong: data()[0],
     };
+    this.setCurrentSong = this.setCurrentSong.bind(this);
+  }
+
+  setCurrentSong(element) {
+    this.setState({ currentSong: element });
   }
 
   render() {
@@ -29,7 +34,7 @@ class App extends Component {
         />
         <Library
           songs={this.state.songs}
-          setCurrentSong={this.state.currentSong}
+          setCurrentSong={this.setCurrentSong}
         />
       </div>
     )

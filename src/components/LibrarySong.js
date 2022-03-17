@@ -1,17 +1,16 @@
+import { logDOM } from "@testing-library/react";
 import React, { Component } from "react";
 
 class LibrarySong extends Component {
   constructor(props) {
     super(props);
-    //States
-    this.state = {
-      setCurrentSong: this.props.setCurrentSong,
-    }
+
   }
   //Event Handlers
   songSelectHandler = () => {
     const selectedSong = this.props.songs.filter((state) => state.id === this.props.id);
-    this.setState({ setCurrentSong: selectedSong[0] })
+    this.props.setCurrentSong(selectedSong[0]);
+    console.log(this.props.song);
   }
 
   render() {

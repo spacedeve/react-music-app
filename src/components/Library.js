@@ -5,11 +5,8 @@ import LibrarySong from "./LibrarySong";
 class Library extends Component {
   constructor(props) {
     super(props);
-    //State
-    this.state = {
-      setCurrentSong: this.props.setCurrentSong,
-    }
   }
+
   render() {
     return (
       <div className="library">
@@ -18,7 +15,7 @@ class Library extends Component {
           {this.props.songs.map((song) => (
             <LibrarySong
               songs={this.props.songs}
-              setCurrentSong={setCurrentSong}
+              setCurrentSong={this.props.setCurrentSong}
               song={song}
               id={song.id}
               key={song.id} />

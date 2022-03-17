@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
-//Utils
-import data from './../utils';
 
 class Player extends Component {
   constructor(props) {
