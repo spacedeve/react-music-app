@@ -20,6 +20,15 @@ h4 {
   color: #646464;
 }
 
+.App {
+  transition: all ease .5s;
+}
+
+.library-active {
+  margin-left: 20%;
+}
+
 @import '_player';
 @import '_song';
 @import '_library';
+@import '_nav';

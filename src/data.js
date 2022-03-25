@@ -92,6 +92,15 @@ const chillHop = () => {
       id: uuidv4(),
       active: false
     },
+    {
+      name: 'Seagulls',
+      cover: 'https://chillhop.com/wp-content/uploads/2022/01/5753da482a6839b31e4905b22a2f8d65913e7eb4-1024x1024.jpg',
+      artist: 'Misha, Zmeyev, Viktor Minsky',
+      audio: 'https://mp3.chillhop.com/serve.php/?mp3=28936',
+      gradientColor: ['#C9CED0', '#FDEDCF'],
+      id: uuidv4(),
+      active: false
+    },
   ]
 }
 

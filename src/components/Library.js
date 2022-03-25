@@ -9,16 +9,19 @@ class Library extends Component {
 
   render() {
     return (
-      <div className="library">
+      <div className={`library ${this.props.libraryStatus ? 'active-library' : ''}`}>
         <h2>Library</h2>
         <div className="library-songs">
           {this.props.songs.map((song) => (
             <LibrarySong
               songs={this.props.songs}
+              setSongs={this.props.setSongs}
               setCurrentSong={this.props.setCurrentSong}
               song={song}
-              id={song.id}
-              key={song.id} />
+              key={song.id}
+              audioRef={this.props.audioRef}
+              isPlaying={this.props.isPlaying}
+            />
           ))}
         </div>
       </div>
