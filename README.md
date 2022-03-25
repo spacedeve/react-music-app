@@ -1,4 +1,2 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 5a872b5e8a1a9e51173dff56f29eeabb913c50d2
+<b> Build Music App with ReactJS </b> <br />
+https://resilient-kheer-12ee11.netlify.app
