@@ -3,9 +3,7 @@ import LibrarySong from "./LibrarySong";
 
 
 class Library extends Component {
-  constructor(props) {
-    super(props);
-  }
+
 
   render() {
     return (

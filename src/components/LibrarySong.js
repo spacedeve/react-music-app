@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 
 class LibrarySong extends Component {
-  constructor(props) {
-    super(props);
 
-  }
   //Event Handlers
   songSelectHandler = async () => {
     const selectedSong = this.props.songs.filter((state) => state.id === this.props.song.id);

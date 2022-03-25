@@ -3,9 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMusic } from "@fortawesome/free-solid-svg-icons";
 
 class Nav extends Component {
-  constructor(props) {
-    super(props);
-  }
+
   render() {
     return (
       <nav>
